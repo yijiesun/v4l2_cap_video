@@ -1,10 +1,12 @@
 
 cmake_minimum_required (VERSION 2.8)
-project(SCREEN_SHOW)
+project(VIDEO_CAP)
 add_definitions(-std=c++11)
 
-set( SCREEN_SHOW_SRCS
-${CMAKE_CURRENT_SOURCE_DIR}/src/screen_show.cpp
+set(CMAKE_BUILD_TYPE "Release")
+
+set( VIDEO_CAP_SRCS
+${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
 ${CMAKE_CURRENT_SOURCE_DIR}/src/v4l2/v4l2.h
 ${CMAKE_CURRENT_SOURCE_DIR}/src/v4l2/v4l2.cpp 
 ${CMAKE_CURRENT_SOURCE_DIR}/src/screen/screen.h
@@ -18,8 +20,8 @@ ${CMAKE_CURRENT_SOURCE_DIR}/src/funs/funs.cpp
 find_package(OpenCV REQUIRED)
 
 #exe
-add_executable(SCREEN_SHOW ${SCREEN_SHOW_SRCS})
-target_link_libraries(SCREEN_SHOW ${OpenCV_LIBS}  pthread)
+add_executable(video_cap ${VIDEO_CAP_SRCS})
+target_link_libraries(video_cap ${OpenCV_LIBS}  pthread)
 
 
 
