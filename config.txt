@@ -1,0 +1,4 @@
+video_width 640.0
+video_height 480.0
+fps 10.0
+cap_num 8.0
