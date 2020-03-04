@@ -1,3 +1,0 @@
-/home/firefly/vid_cap_v4l2/build/CMakeFiles/rebuild_cache.dir
-/home/firefly/vid_cap_v4l2/build/CMakeFiles/video_cap.dir
-/home/firefly/vid_cap_v4l2/build/CMakeFiles/edit_cache.dir

@@ -1,4 +1,7 @@
-video_width 640.0
-video_height 480.0
-fps 10.0
-cap_num 8.0
+video_width 1920.0
+video_height 1080.0
+fps 15.0
+cap_num 10.0
+screen_pos_x 0.0
+screen_pos_y 0.0
+ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
