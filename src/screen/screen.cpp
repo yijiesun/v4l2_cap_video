@@ -60,16 +60,15 @@ int SCREEN::init(char *dev,int wid,int hgt)
         pfb = (unsigned int *)malloc(finfo.smem_len);
         pfb = (unsigned int *)mmap(NULL, finfo.smem_len, PROT_READ | PROT_WRITE, MAP_SHARED, fb, 0);
 
-        printf("smem_len: %ld", finfo.smem_len);
+        printf("smem_len: %ld\n", finfo.smem_len);
         if (NULL == pfb)
         {
             perror("mmap");
             return -1;
         }
        
-        printf("pfb :0x%x \n", *pfb);
-        std::cout << "height: " << vinfo.yres << "weight: "<< vinfo.xres << std::endl;
-        std::cout << "xres_virtual: " << vinfo.xres_virtual << "yres_virtual: "<< vinfo.yres_virtual << std::endl;
+        std::cout << "xres: " << vinfo.xres << " yres: "<< vinfo.yres << std::endl;
+        std::cout << "xres_virtual: " << vinfo.xres_virtual << " yres_virtual: "<< vinfo.yres_virtual << std::endl;
 }
 
 void SCREEN::show_bgr_mat_at_screen(Mat &in,int pos_x,int pos_y)
