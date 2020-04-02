@@ -67,8 +67,8 @@ int SCREEN::init(char *dev,int wid,int hgt)
             return -1;
         }
        
-        std::cout << "xres: " << vinfo.xres << " yres: "<< vinfo.yres << std::endl;
-        std::cout << "xres_virtual: " << vinfo.xres_virtual << " yres_virtual: "<< vinfo.yres_virtual << std::endl;
+        // std::cout << "xres: " << vinfo.xres << " yres: "<< vinfo.yres << std::endl;
+        // std::cout << "xres_virtual: " << vinfo.xres_virtual << " yres_virtual: "<< vinfo.yres_virtual << std::endl;
 }
 
 void SCREEN::show_bgr_mat_at_screen(Mat &in,int pos_x,int pos_y)
